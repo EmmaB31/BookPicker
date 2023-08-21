@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.31);
+    background-image: url("https://jooinn.com/images/opened-book-4.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+#sumbitButton {
+    background-color: rgb(240, 226, 204);
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+}
+#selected-book {
+    border: 3px solid rgb(169, 144, 144);
+    color: rgb(23, 22, 22);
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+#page-button{
+    padding-top: 20px;
+}
+a {
+    color:rgb(39, 39, 39);
+    text-decoration: none;
+    background-color: rgb(224, 210, 210);
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+}
+a:hover {
+    color:rgb(216, 127, 127);
+    text-decoration: none;
+}
+form {
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+
+    border-radius: 15%;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=text] {
+    padding: 10px;
+    margin: 6px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+}
+button {
+    background-color: rgb(224, 210, 210);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.2);
+    font-weight: 600;
+}
+button:hover {
+    background-color: rgb(168, 157, 157);
+}
+input[type=submit] {
+    background-color: rgb(224, 210, 210);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top:15px;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.2);
+    font-weight: 600;
+}
+input[type=submit]:hover {
+    background-color: rgb(168, 157, 157);
+}
+
+.select select {
+    background-color: rgb(208, 205, 199);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#to-read-list {
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(201, 187, 192, 0.779);
+    border-radius: 5%;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}

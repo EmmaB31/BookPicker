@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Picker</title>
 </head>
 <body>
+    <div class="header">
+<h1>Pick My Next Book</h1>
+</div>
+<div id="page-button">
+  <a href="addbook.html">Add Books</a>  
+  <a href="toreadlist.html">To Read List</a>
+</div>  
 
-
-
-    <script src="script.js"></script>
+<br>
+<div class="form">
+    <form class="get_book">
+        <label for="genre">Select Genre: </label>
+        <div class="select">
+        <select id="genre-category" name="genre">
+            <option value="Fantasy">Fantasy</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Young Adult">Young Adult</option>
+            <option value="Crime">Crime</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Sci-fi">Sci-fi</option>
+        </select>
+    </div>
+        
+        
+        <label for="length">Select Length: </label>
+        <div class="select">
+        <select id="length-category" name="length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+        </div>
+    
+        <label for="series">Series?: </label>
+        <div class="select">
+            <select id="series-category" name="series">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        </div>
+        <br>
+        <button type="submit" id="button" >Choose my book!</button>
+        
+    </form>
+    <button id="lucky" type="button">Random Book</button>
+</div>
+<br>
+<div id="selected-book">
+    <!-- <p>Book details will be returened here!</p> -->
+</div>
+    <script src="book.js"></script>
 </body>
 </html>
