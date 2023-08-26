@@ -107,3 +107,7 @@ input[type=submit]:hover {
     border: 0;
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
 }
+
+.delete-button {
+    margin-left: 15px;
+}

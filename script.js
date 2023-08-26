@@ -28,7 +28,7 @@ document.querySelector("#book_form").addEventListener("submit", async (e) => {
     const exitsingBookMessage = document.querySelector("#existing-book-message");
 
     try {
-        const response = await fetch("http://localhost:8000/addbook", {  // Added "/addbook" to the URL
+        const response = await fetch("https://bookpicker-backend.onrender.com/addbook", {  // Added "/addbook" to the URL
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -43,12 +43,22 @@ document.querySelector("#book_form").addEventListener("submit", async (e) => {
         } else {
             const responseData = await response.json();
             console.log('Book added successfully', responseData);
-            sucessMessage.style.display = "block";
+
+            document.querySelector("#title").value = "";
+            document.querySelector("#author").value = "";
+            document.querySelector("#genre").value = "";
+            document.querySelector("#length").value = "";
+            document.querySelector("#series").checked = false;
+
+
+            sucessMessage.style.display = "block";   
         }
+       
     } catch (error) {
         console.error('Error adding book', error);
         errorMessage.style.display = "block"
-    }
+    } 
+    
 });
 
 

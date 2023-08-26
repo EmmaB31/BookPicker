@@ -5,7 +5,7 @@ const isSeries = document.querySelector("#series-category").value;
 
 async function getBooks() {
     try {
-        const response = await fetch("http://localhost:8000");
+        const response = await fetch("https://bookpicker-backend.onrender.com");
         if (!response.ok) {
             throw new Error("Failed to fetch data");
         }
@@ -39,7 +39,7 @@ async function getFilteredBooks() {
     } 
 
     try {
-        const response = await fetch(`http://localhost:8000/books?genre=${genre}&minLength=${minLength}&maxLength=${maxLength}&isSeries=${isSeries}`)
+        const response = await fetch(`https://bookpicker-backend.onrender.com/books?genre=${genre}&minLength=${minLength}&maxLength=${maxLength}&isSeries=${isSeries}`)
         const books = await response.json();
         console.log(books)
         console.log(minLength, maxLength, 'book length')
